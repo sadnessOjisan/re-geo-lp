@@ -63,6 +63,13 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
         <Link to="/ja/" style={{ marginLeft: "12px", color: "white" }}>
           日本語
         </Link>
+        /
+        <a
+          href="https://twitter.com/sadnessOjisan"
+          style={{ marginLeft: "12px", color: "white" }}
+        >
+          About Me
+        </a>
       </div>
     </Wrapper>
   )

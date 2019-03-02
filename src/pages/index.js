@@ -135,7 +135,11 @@ const IndexPage = () => {
           </Section>
           <hr />
           <Section
-            style={{ marginTop: "36px", marginBottom: "36px", display: "flex" }}
+            style={{
+              marginTop: "36px",
+              marginBottom: "36px",
+              display: "flex",
+            }}
           >
             <div style={{ marginRight: "36px" }}>
               <H2 color="white">What is re-geo</H2>
@@ -242,32 +246,58 @@ const IndexPage = () => {
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <div style={{ width: "100%" }}>
-                  <Font color="white">
+                  <Font color="white" size={36}>
                     All Example is Here.
-                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                    <a
+                      href="https://zen-nightingale-960cf0.netlify.com"
+                      style={{
+                        color: "orange",
+                        fontSize: "36px",
+                      }}
+                    >
                       storybook
                     </a>
                   </Font>
                 </div>
                 <div style={{ width: "100%" }}>
-                  <Zoom speed={1}>
-                    <a href="https://zen-nightingale-960cf0.netlify.com">
-                      storybook
-                    </a>
-                  </Zoom>
+                  <Center horizontal={true}>
+                    <Zoom speed={1}>
+                      <a
+                        href="https://zen-nightingale-960cf0.netlify.com"
+                        style={{
+                          color: "red",
+                        }}
+                      >
+                        storybook
+                      </a>
+                    </Zoom>
+                  </Center>
                 </div>
                 <br />
                 <div style={{ width: "100%" }}>
-                  <Rotator speed={1}>
-                    <a href="https://zen-nightingale-960cf0.netlify.com">
-                      storybook
-                    </a>
-                  </Rotator>
+                  <Center horizontal={true}>
+                    <Rotator speed={3}>
+                      <a
+                        href="https://zen-nightingale-960cf0.netlify.com"
+                        style={{
+                          color: "white",
+                          fontSize: "48px",
+                        }}
+                      >
+                        storybook
+                      </a>
+                    </Rotator>
+                  </Center>
                 </div>
                 <br />
                 <div style={{ width: "100%" }}>
                   <Marquee direction="right">
-                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                    <a
+                      href="https://zen-nightingale-960cf0.netlify.com"
+                      style={{
+                        color: "white",
+                      }}
+                    >
                       storybook
                     </a>
                   </Marquee>
@@ -275,7 +305,12 @@ const IndexPage = () => {
                 <br />
                 <Alerts type="alert">
                   All Components is in{" "}
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
+                  <a
+                    href="https://zen-nightingale-960cf0.netlify.com"
+                    style={{
+                      color: "black",
+                    }}
+                  >
                     storybook
                   </a>
                   .
