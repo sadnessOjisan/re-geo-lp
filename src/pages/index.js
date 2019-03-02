@@ -83,7 +83,6 @@ const IndexPage = () => {
               marginLeft: "-24px",
               height: "70vh",
               width: "100vw",
-              backgroundColor: "black",
             }}
           >
             <Center vertical={true} horizontal={true}>
@@ -99,10 +98,19 @@ const IndexPage = () => {
                     </GradationText>
                   </H1>
                 </Center>
-                <div style={{ position: "absolute", right: "0" }}>
+                <div style={{ position: "absolute", right: "12px" }}>
                   <img src={Image.Geocities} />
                   <br />
                   <img src={Image.Hot} />
+                </div>
+                <div style={{ position: "absolute", left: "12px" }}>
+                  <img src={Image.Notepad} />
+                  <br />
+                  <img src={Image.NSLogo} />
+                  <br />
+                  <img src={Image.Webtrips} />
+                  <br />
+                  <img src={Image.Wabwalk} />
                 </div>
                 <br />
                 <br />
@@ -126,38 +134,43 @@ const IndexPage = () => {
             </Center>
           </Section>
           <hr />
-          <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
-            <H2 color="white">What is re-geo</H2>
-            <Font color="white">
-              re-geo is a react based UI components library to revive
-              geo-cities. I am very inspired by
-              <a href="https://github.com/divshot/geo-bootstrap">
-                geo-bootstrap
-              </a>
-              . special thanks.
-            </Font>
-            <Center horizontal={true}>
-              <img src={Image.Computer01} />
-              <img src={Image.Computer01} />
-              <img src={Image.Computer01} />
-            </Center>
+          <Section
+            style={{ marginTop: "36px", marginBottom: "36px", display: "flex" }}
+          >
+            <div style={{ marginRight: "36px" }}>
+              <H2 color="white">What is re-geo</H2>
+              <Font color="white">
+                re-geo is a react based UI components library to revive
+                geo-cities.
+              </Font>
+              <Font color="white">
+                I am very inspired by
+                <a
+                  href="https://github.com/divshot/geo-bootstrap"
+                  style={{ color: "white" }}
+                >
+                  geo-bootstrap
+                </a>
+                special thanks.
+              </Font>
+            </div>
+            <div>
+              <H2 color="white">Motivation</H2>
+              <Font color="white">
+                I like Geo Cities Style Design. But, Geo Cities will be close in
+                this March in Japan.
+              </Font>
+              <Font color="white">
+                Then I deside to revive geo-cities style design forever.
+              </Font>
+            </div>
           </Section>
+          <Center horizontal={true}>
+            <img src={Image.Computer01} />
+            <img src={Image.Computer01} />
+            <img src={Image.Computer01} />
+          </Center>
           <hr />
-          <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
-            <H2 color="white">Motivation</H2>
-            <Font color="white">
-              I like Geo Cities Style Design. But, Geo Cities will be close in
-              this March in Japan.
-            </Font>
-            <Font color="white">
-              Then I deside to revive geo-cities style design forever.
-            </Font>
-            <Center horizontal={true}>
-              <img src={Image.Hot} />
-              <img src={Image.Hot} />
-              <img src={Image.Hot} />
-            </Center>
-          </Section>
           <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">How to use</H2>
