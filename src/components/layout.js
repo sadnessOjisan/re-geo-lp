@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
     render={data => (
       <Wrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <Main>{children}</Main>
         <footer>
           © {new Date().getFullYear()}, Built with
           <a href="https://www.gatsbyjs.org">Gatsby</a>
@@ -30,6 +30,10 @@ const Layout = ({ children }) => (
 )
 
 const Wrapper = styled.div`
+  height: 100vh;
+`
+
+const Main = styled.main`
   height: 100%;
 `
 
