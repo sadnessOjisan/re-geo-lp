@@ -32,6 +32,9 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
         display: "flex",
         background: `url(${Image.Flames}) top left`,
         alignItems: "center",
+        position: "fixed",
+        width: "100%",
+        top: "0px",
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -40,6 +43,7 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontSize: "36px",
           }}
         >
           {siteTitle}
@@ -47,9 +51,16 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
       </h1>
       <div style={{ position: "absolute", right: "12px", color: "white" }}>
         <Link to="/" style={{ marginRight: "12px", color: "white" }}>
-          English
+          Github
         </Link>
         <Link to="/ja/" style={{ marginRight: "12px", color: "white" }}>
+          StoryBook
+        </Link>
+        /
+        <Link to="/" style={{ marginLeft: "12px", color: "white" }}>
+          English
+        </Link>
+        <Link to="/ja/" style={{ marginLeft: "12px", color: "white" }}>
           日本語
         </Link>
       </div>

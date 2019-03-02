@@ -76,17 +76,21 @@ const IndexPage = () => {
           >
             IEは禁止ーーーーーーーーーーーーーーーーー！
           </Marquee>
-          <Center horizontal={true}>
-            <H1>
-              <GradationText
-                fontSize={48}
-                colorArray={["red", "blue", "green"]}
-                isAnimate={true}
-              >
-                re-geo
-              </GradationText>
-            </H1>
-          </Center>
+          <Section
+            style={{ marginTop: "36px", marginBottom: "36px", height: "80vh" }}
+          >
+            <Center horizontal={true}>
+              <H1>
+                <GradationText
+                  fontSize={48}
+                  colorArray={["red", "blue", "green"]}
+                  isAnimate={true}
+                >
+                  re-geo
+                </GradationText>
+              </H1>
+            </Center>
+          </Section>
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">What is re-geo</H2>
             <Font color="white">
@@ -97,9 +101,9 @@ const IndexPage = () => {
               . special thanks.
             </Font>
             <Center horizontal={true}>
-              <img src={Image.Computer01} />
-              <img src={Image.Computer01} />
-              <img src={Image.Computer01} />
+              <img src={Image.Computer01} alt="Computer01" />
+              <img src={Image.Computer01} alt="Computer01" />
+              <img src={Image.Computer01} alt="Computer01" />
             </Center>
           </Section>
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>

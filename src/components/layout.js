@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
             isSelectedJapanese={isSelectedJapanese}
             setJapaneseMode={setJapaneseMode}
           />
-          <Main>{children}</Main>
+          <Main style={{ paddingTop: "68px" }}>{children}</Main>
           <footer>
             © <a href="https://twitter.com/sadnessOjisan">sadnessOjisan</a>
             {new Date().getFullYear()}, Built with

@@ -66,7 +66,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <Background pattern="stars" style={{ padding: "24px" }}>
+      <Background pattern="microfab" style={{ padding: "24px" }}>
         <Wrapper style={{ padding: "24px" }}>
           <Marquee
             direction="right"
@@ -76,17 +76,56 @@ const IndexPage = () => {
           >
             this library is not support IE.
           </Marquee>
-          <Center horizontal={true}>
-            <H1>
-              <GradationText
-                fontSize={48}
-                colorArray={["red", "blue", "green"]}
-                isAnimate={true}
-              >
-                re-geo
-              </GradationText>
-            </H1>
-          </Center>
+          <Section
+            style={{
+              marginTop: "36px",
+              marginBottom: "36px",
+              marginLeft: "-24px",
+              height: "70vh",
+              width: "100vw",
+              backgroundColor: "black",
+            }}
+          >
+            <Center vertical={true} horizontal={true}>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Center horizontal={true}>
+                  <H1>
+                    <GradationText
+                      fontSize={96}
+                      colorArray={["red", "blue", "green"]}
+                      isAnimate={true}
+                    >
+                      re-geo
+                    </GradationText>
+                  </H1>
+                </Center>
+                <div style={{ position: "absolute", right: "0" }}>
+                  <img src={Image.Geocities} />
+                  <br />
+                  <img src={Image.Hot} />
+                </div>
+                <br />
+                <br />
+                <Center horizontal={true}>
+                  <H2>react based geo cities style component</H2>
+                </Center>
+                <br />
+                <Center horizontal={true}>
+                  <div
+                    style={{
+                      color: "white",
+                      padding: "12px 36px",
+                      backgroundColor: "#555",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    {"npm i -S re-geo"}
+                  </div>
+                </Center>
+              </div>
+            </Center>
+          </Section>
+          <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">What is re-geo</H2>
             <Font color="white">
@@ -103,6 +142,7 @@ const IndexPage = () => {
               <img src={Image.Computer01} />
             </Center>
           </Section>
+          <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">Motivation</H2>
             <Font color="white">
@@ -118,6 +158,7 @@ const IndexPage = () => {
               <img src={Image.Hot} />
             </Center>
           </Section>
+          <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">How to use</H2>
             <div
@@ -164,6 +205,7 @@ const IndexPage = () => {
                 </GradationText>
               </H1>
             </Center>
+            <br />
             <Center horizontal={true}>
               <H1>
                 <Button type="primary" size="large">
@@ -172,6 +214,7 @@ const IndexPage = () => {
               </H1>
             </Center>
           </Section>
+          <hr />
           <Section
             style={{
               marginTop: "36px",
@@ -179,52 +222,61 @@ const IndexPage = () => {
               backgroundColor: "white",
             }}
           >
-            <H2 color="white">Examples</H2>
-            <div
-              horizontal={true}
-              style={{ display: "flex", flexDirection: "column" }}
-            >
-              <div style={{ width: "100%" }}>
-                <Font color="white">
-                  All Example is Here.
+            <Background pattern="stars" style={{ padding: "24px" }}>
+              <H2 color="white">Examples</H2>
+              <div
+                horizontal={true}
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <div style={{ width: "100%" }}>
+                  <Font color="white">
+                    All Example is Here.
+                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                      storybook
+                    </a>
+                  </Font>
+                </div>
+                <div style={{ width: "100%" }}>
+                  <Zoom speed={1}>
+                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                      storybook
+                    </a>
+                  </Zoom>
+                </div>
+                <br />
+                <div style={{ width: "100%" }}>
+                  <Rotator speed={1}>
+                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                      storybook
+                    </a>
+                  </Rotator>
+                </div>
+                <br />
+                <div style={{ width: "100%" }}>
+                  <Marquee direction="right">
+                    <a href="https://zen-nightingale-960cf0.netlify.com">
+                      storybook
+                    </a>
+                  </Marquee>
+                </div>
+                <br />
+                <Alerts type="alert">
+                  All Components is in{" "}
                   <a href="https://zen-nightingale-960cf0.netlify.com">
                     storybook
                   </a>
-                </Font>
+                  .
+                </Alerts>
               </div>
-              <div style={{ width: "100%" }}>
-                <Zoom speed={1}>
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
-                    storybook
-                  </a>
-                </Zoom>
-              </div>
-              <br />
-              <div style={{ width: "100%" }}>
-                <Rotator speed={1}>
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
-                    storybook
-                  </a>
-                </Rotator>
-              </div>
-              <br />
-              <div style={{ width: "100%" }}>
-                <Marquee direction="right">
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
-                    storybook
-                  </a>
-                </Marquee>
-              </div>
-              <br />
-              <Alerts type="alert">
-                All Components is in{" "}
-                <a href="https://zen-nightingale-960cf0.netlify.com">
-                  storybook
-                </a>
-                .
-              </Alerts>
-            </div>
+            </Background>
           </Section>
+          <hr />
+          <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
+            <H2 color="white">Tips For Create Geo Cities Style</H2>
+            <img src={Image.Construction} />
+            <Font color="white">Now I am preparing</Font>
+          </Section>
+          <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">ReleaseNote</H2>
             <Table
@@ -235,6 +287,7 @@ const IndexPage = () => {
               ]}
             />
           </Section>
+          <hr />
           <Section style={{ marginTop: "36px", marginBottom: "36px" }}>
             <H2 color="white">Ohters</H2>
             <Font color="white">
