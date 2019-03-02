@@ -1,19 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
-// import {
-//   Image,
-//   Background,
-//   H1,
-//   Font,
-//   Center,
-//   GradationText,
-//   H2,
-//   Table,
-//   Zoom,
-//   Rotator,
-//   Button,
-//   Marquee,
-// } from "re-geo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -70,7 +56,7 @@ const IndexPage = () => {
     isComponentDidMount,
   } = component
   if (!isComponentDidMount) {
-    return "a"
+    return <Layout>LOADING</Layout>
   }
   return (
     <Layout>
