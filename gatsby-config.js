@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `re-geo`,
+    description: `re-geo is a 're'act based UI components library to 're'vive geo-cities.`,
+    author: `@sadnessOjisan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
