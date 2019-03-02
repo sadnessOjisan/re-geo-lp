@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 import React, { useEffect, useState } from "react"
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
   const [component, setComponent] = useState({
     Image: { Stars: null },
     isComponentDidMount: false,
@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
   }, [])
   const { Image, isComponentDidMount } = component
   if (!isComponentDidMount) {
-    return "LOADING"
+    return ""
   }
   const Wrapper = styled.header`
     height: 68px;
@@ -25,7 +25,15 @@ const Header = ({ siteTitle }) => {
     align-items: center;
   `
   return (
-    <Wrapper>
+    <Wrapper
+      style={{
+        height: "68px",
+        padding: "12px",
+        display: "flex",
+        background: `url(${Image.Flames}) top left`,
+        alignItems: "center",
+      }}
+    >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -37,6 +45,14 @@ const Header = ({ siteTitle }) => {
           {siteTitle}
         </Link>
       </h1>
+      <div style={{ position: "absolute", right: "12px", color: "white" }}>
+        <Link to="/" style={{ marginRight: "12px", color: "white" }}>
+          English
+        </Link>
+        <Link to="/ja/" style={{ marginRight: "12px", color: "white" }}>
+          日本語
+        </Link>
+      </div>
     </Wrapper>
   )
 }
