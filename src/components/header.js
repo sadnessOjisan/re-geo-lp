@@ -50,12 +50,18 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
         </Link>
       </h1>
       <div style={{ position: "absolute", right: "12px", color: "white" }}>
-        <Link to="/" style={{ marginRight: "12px", color: "white" }}>
+        <a
+          href="https://github.com/sadnessOjisan/re-geo"
+          style={{ marginRight: "12px", color: "white" }}
+        >
           Github
-        </Link>
-        <Link to="/ja/" style={{ marginRight: "12px", color: "white" }}>
+        </a>
+        <a
+          href="https://zen-nightingale-960cf0.netlify.com"
+          style={{ marginRight: "12px", color: "white" }}
+        >
           StoryBook
-        </Link>
+        </a>
         /
         <Link to="/" style={{ marginLeft: "12px", color: "white" }}>
           English
