@@ -190,14 +190,14 @@ const IndexPage = () => {
               <div style={{ width: "100%" }}>
                 <Font color="white">
                   All Example is Here.
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
+                  <a href="https://re-geo-storybook.netlify.com">
                     storybook
                   </a>
                 </Font>
               </div>
               <div style={{ width: "100%" }}>
                 <Zoom speed={1}>
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
+                  <a href="https://re-geo-storybook.netlify.com">
                     storybook
                   </a>
                 </Zoom>
@@ -205,7 +205,7 @@ const IndexPage = () => {
               <br />
               <div style={{ width: "100%" }}>
                 <Rotator speed={1}>
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
+                  <a href="https://re-geo-storybook.netlify.com">
                     storybook
                   </a>
                 </Rotator>
@@ -213,7 +213,7 @@ const IndexPage = () => {
               <br />
               <div style={{ width: "100%" }}>
                 <Marquee direction="right">
-                  <a href="https://zen-nightingale-960cf0.netlify.com">
+                  <a href="https://re-geo-storybook.netlify.com">
                     storybook
                   </a>
                 </Marquee>
@@ -221,7 +221,7 @@ const IndexPage = () => {
               <br />
               <Alerts type="alert">
                 All Components is in{" "}
-                <a href="https://zen-nightingale-960cf0.netlify.com">
+                <a href="https://re-geo-storybook.netlify.com">
                   storybook
                 </a>
                 .

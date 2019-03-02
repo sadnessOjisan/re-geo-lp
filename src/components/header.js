@@ -57,7 +57,7 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
           Github
         </a>
         <a
-          href="https://zen-nightingale-960cf0.netlify.com"
+          href="https://re-geo-storybook.netlify.com"
           style={{ marginRight: "12px", color: "white" }}
         >
           StoryBook
