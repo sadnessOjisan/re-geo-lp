@@ -8588,10 +8588,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re-geo@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/re-geo/-/re-geo-0.0.10.tgz#9721680434fb716f346460c9374874e52ab0ba0c"
-  integrity sha512-Y+OuUgw3w1Pchl+MrXwPeEELy3EdAd0wxQesQQicIEi1HgRUfL/Uhg2sP/Cp+ZKnwcOtLEe+N6qgd0XNxnxMMQ==
+re-geo@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/re-geo/-/re-geo-0.0.12.tgz#14ff066107e8434ffb410a7e3bd7b46da7de57d6"
+  integrity sha512-9DqWbfRF5OoNas1FLi1N2MvUO2Bcy6YhTAR/C89WUM+8Eg/LX06l5q9LfTakQnGOzCscv2tR5dV/Nny3lIbMvw==
   dependencies:
     bootstrap "^4.3.1"
     jquery "^3.3.1"

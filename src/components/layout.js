@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { Image, Button } from "re-geo"
 import Header from "./header"
 import "../util/reset.css"
-
+import "../util/global.css"
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -21,7 +21,8 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Main>{children}</Main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © <a href="https://twitter.com/sadnessOjisan">sadnessOjisan</a>
+          {new Date().getFullYear()}, Built with
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </Wrapper>
