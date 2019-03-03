@@ -57,6 +57,12 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
           Github
         </a>
         <a
+          href="https://www.npmjs.com/package/re-geo"
+          style={{ marginRight: "12px", color: "white" }}
+        >
+          npm
+        </a>
+        <a
           href="https://re-geo-storybook.netlify.com"
           style={{ marginRight: "12px", color: "white" }}
         >
