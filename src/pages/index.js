@@ -25,6 +25,7 @@ const IndexPage = () => {
       Button,
       Marquee,
       Alerts,
+      Blink,
     } = await import("re-geo")
     setComponent({
       Image,
@@ -40,6 +41,7 @@ const IndexPage = () => {
       Button,
       Marquee,
       Alerts,
+      Blink,
       isComponentDidMount: true,
     })
   }, [])
@@ -57,6 +59,7 @@ const IndexPage = () => {
     Button,
     Marquee,
     Alerts,
+    Blink,
     isComponentDidMount,
   } = component
   if (!isComponentDidMount) {
@@ -72,6 +75,7 @@ const IndexPage = () => {
             direction="right"
             behavior="alternate"
             scrollamount={24}
+            height="36px"
             style={{ color: "white" }}
           >
             this library is not support IE.
@@ -118,6 +122,7 @@ const IndexPage = () => {
                   <H2>react based geo cities style component</H2>
                 </Center>
                 <br />
+                <br />
                 <Center horizontal={true}>
                   <div
                     style={{
@@ -129,6 +134,40 @@ const IndexPage = () => {
                   >
                     {"npm i -S re-geo"}
                   </div>
+                </Center>
+                <br />
+                <br />
+                <Center horizontal={true}>
+                  <a
+                    href="https://github.com/sadnessOjisan/re-geo"
+                    style={{
+                      marginRight: "12px",
+                      color: "white",
+                      fontSize: "24px",
+                    }}
+                  >
+                    Github
+                  </a>
+                  <a
+                    href="https://www.npmjs.com/package/re-geo"
+                    style={{
+                      marginRight: "12px",
+                      color: "white",
+                      fontSize: "24px",
+                    }}
+                  >
+                    npm
+                  </a>
+                  <a
+                    href="https://re-geo-storybook.netlify.com"
+                    style={{
+                      marginRight: "12px",
+                      color: "white",
+                      fontSize: "24px",
+                    }}
+                  >
+                    StoryBook
+                  </a>
                 </Center>
               </div>
             </Center>
@@ -151,7 +190,11 @@ const IndexPage = () => {
                 I am very inspired by
                 <a
                   href="https://github.com/divshot/geo-bootstrap"
-                  style={{ color: "white" }}
+                  style={{
+                    color: "white",
+                    marginRight: "8px",
+                    marginLeft: "8px",
+                  }}
                 >
                   geo-bootstrap
                 </a>
@@ -291,7 +334,22 @@ const IndexPage = () => {
                 </div>
                 <br />
                 <div style={{ width: "100%" }}>
-                  <Marquee direction="right">
+                  <Marquee direction="right" height="36px">
+                    <a
+                      href="https://re-geo-storybook.netlify.com"
+                      style={{
+                        color: "white",
+                      }}
+                    >
+                      storybook
+                    </a>
+                  </Marquee>
+                  <Marquee
+                    direction="right"
+                    height="36px"
+                    behavior="alternate"
+                    scrollamount={30}
+                  >
                     <a
                       href="https://re-geo-storybook.netlify.com"
                       style={{
@@ -303,7 +361,7 @@ const IndexPage = () => {
                   </Marquee>
                 </div>
                 <br />
-                <Alerts type="alert">
+                <Alerts type="info">
                   All Components is in{" "}
                   <a
                     href="https://re-geo-storybook.netlify.com"
@@ -315,7 +373,32 @@ const IndexPage = () => {
                   </a>
                   .
                 </Alerts>
+                <Marquee
+                  direction="right"
+                  height="200px"
+                  behavior="alternate"
+                  scrollamount={10}
+                  style={{ paddingTop: "80px" }}
+                >
+                  <Rotator>
+                    <Zoom>
+                      <Blink>
+                        <a
+                          href="https://re-geo-storybook.netlify.com"
+                          style={{
+                            color: "white",
+                          }}
+                        >
+                          storybook
+                        </a>
+                      </Blink>
+                    </Zoom>
+                  </Rotator>
+                </Marquee>
               </div>
+              <Alerts type="alert">
+                You should think about accessibility again.
+              </Alerts>
             </Background>
           </Section>
           <hr />
@@ -340,7 +423,12 @@ const IndexPage = () => {
             <H2 color="white">Ohters</H2>
             <Font color="white">
               If you want to send me a message, please here.
-              <a href="https://github.com/sadnessOjisan/re-geo">github</a>
+              <a
+                href="https://github.com/sadnessOjisan/re-geo"
+                style={{ color: "white" }}
+              >
+                github
+              </a>
               <img src={Image.Emailme} />
             </Font>
           </Section>
