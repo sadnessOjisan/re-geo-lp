@@ -42,6 +42,23 @@ const IndexPage = () => {
       Alerts,
       isComponentDidMount: true,
     })
+    return () =>
+      setComponent({
+        Image,
+        Background,
+        H1,
+        Font,
+        Center,
+        GradationText,
+        H2,
+        Table,
+        Zoom,
+        Rotator,
+        Button,
+        Marquee,
+        Alerts,
+        isComponentDidMount: false,
+      })
   }, [])
   const {
     Image,
@@ -190,41 +207,30 @@ const IndexPage = () => {
               <div style={{ width: "100%" }}>
                 <Font color="white">
                   All Example is Here.
-                  <a href="https://re-geo-storybook.netlify.com">
-                    storybook
-                  </a>
+                  <a href="https://re-geo-storybook.netlify.com">storybook</a>
                 </Font>
               </div>
               <div style={{ width: "100%" }}>
                 <Zoom speed={1}>
-                  <a href="https://re-geo-storybook.netlify.com">
-                    storybook
-                  </a>
+                  <a href="https://re-geo-storybook.netlify.com">storybook</a>
                 </Zoom>
               </div>
               <br />
               <div style={{ width: "100%" }}>
                 <Rotator speed={1}>
-                  <a href="https://re-geo-storybook.netlify.com">
-                    storybook
-                  </a>
+                  <a href="https://re-geo-storybook.netlify.com">storybook</a>
                 </Rotator>
               </div>
               <br />
               <div style={{ width: "100%" }}>
                 <Marquee direction="right">
-                  <a href="https://re-geo-storybook.netlify.com">
-                    storybook
-                  </a>
+                  <a href="https://re-geo-storybook.netlify.com">storybook</a>
                 </Marquee>
               </div>
               <br />
               <Alerts type="alert">
                 All Components is in{" "}
-                <a href="https://re-geo-storybook.netlify.com">
-                  storybook
-                </a>
-                .
+                <a href="https://re-geo-storybook.netlify.com">storybook</a>.
               </Alerts>
             </div>
           </Section>

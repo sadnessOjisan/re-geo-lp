@@ -44,6 +44,24 @@ const IndexPage = () => {
       Blink,
       isComponentDidMount: true,
     })
+    return () =>
+      setComponent({
+        Image,
+        Background,
+        H1,
+        Font,
+        Center,
+        GradationText,
+        H2,
+        Table,
+        Zoom,
+        Rotator,
+        Button,
+        Marquee,
+        Alerts,
+        Blink,
+        isComponentDidMount: false,
+      })
   }, [])
   const {
     Image,
