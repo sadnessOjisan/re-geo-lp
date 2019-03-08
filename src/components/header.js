@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 import React, { useEffect, useState } from "react"
-const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
+const Header = ({ siteTitle, setMode }) => {
   const [component, setComponent] = useState({
     Image: { Stars: null },
     isComponentDidMount: false,
@@ -69,12 +69,26 @@ const Header = ({ siteTitle, isSelectedJapanese, setJapaneseMode }) => {
           StoryBook
         </a>
         /
-        <Link to="/" style={{ marginLeft: "12px", color: "white" }}>
+        <span
+          style={{
+            marginLeft: "12px",
+            color: "white",
+            textDecoration: "underline",
+          }}
+          onClick={setMode}
+        >
           English
-        </Link>
-        <Link to="/ja/" style={{ marginLeft: "12px", color: "white" }}>
+        </span>
+        <span
+          style={{
+            marginLeft: "12px",
+            color: "white",
+            textDecoration: "underline",
+          }}
+          onClick={setMode}
+        >
           日本語
-        </Link>
+        </span>
         /
         <a
           href="https://twitter.com/sadnessOjisan"

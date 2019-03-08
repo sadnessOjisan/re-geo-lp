@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "../util/reset.css"
 import "../util/global.css"
-const Layout = ({ children }) => {
+const Layout = ({ children, setMode }) => {
   const [isSelectedJapanese, setJapaneseMode] = useState(false)
   return (
     <StaticQuery
@@ -23,6 +23,7 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             isSelectedJapanese={isSelectedJapanese}
             setJapaneseMode={setJapaneseMode}
+            setMode={setMode}
           />
           <Main style={{ paddingTop: "68px" }}>{children}</Main>
           <footer>
