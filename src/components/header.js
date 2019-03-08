@@ -74,6 +74,7 @@ const Header = ({ siteTitle, setMode }) => {
             marginLeft: "12px",
             color: "white",
             textDecoration: "underline",
+            cursor: "pointer",
           }}
           onClick={setMode}
         >
@@ -84,6 +85,7 @@ const Header = ({ siteTitle, setMode }) => {
             marginLeft: "12px",
             color: "white",
             textDecoration: "underline",
+            cursor: "pointer",
           }}
           onClick={setMode}
         >

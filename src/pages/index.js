@@ -216,7 +216,7 @@ const IndexPage = () => {
                   geo-cities.
                 </Font>
                 <Font color="white">
-                  I am very inspired by
+                  This is inspired by
                   <a
                     href="https://github.com/divshot/geo-bootstrap"
                     style={{
@@ -233,11 +233,11 @@ const IndexPage = () => {
               <div>
                 <H2 color="white">Motivation</H2>
                 <Font color="white">
-                  I like Geo Cities Style Design. But, Geo Cities will be close
-                  in this March in Japan.
+                  I like Geo Cities Style Design, but Geo Cities will close.
                 </Font>
                 <Font color="white">
-                  Then I deside to revive geo-cities style design forever.
+                  That is why I want to remain geo-cities style design, by
+                  modern development tool, just like React.
                 </Font>
               </div>
             </Section>
